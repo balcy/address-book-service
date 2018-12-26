@@ -160,7 +160,7 @@ namespace
                 QStringList values = property.value().split(QStringLiteral(";"));
                 target.setSyncTarget(values.value(0));
                 if (values.size() > 1) {
-                    target.setValue(QContactSyncTarget::FieldSyncTarget + 1, values.value(1));
+                    target.setValue(QContactSyncTarget::FieldSyncTarget + 1, "DUMMY" + values.value(1));
                 }
                 if (values.size() > 2) {
                     target.setValue(QContactSyncTarget::FieldSyncTarget + 2, values.value(2));
